@@ -1,0 +1,700 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+.home_bg {
+    background-image: url(../images/home.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+header{
+    position: fixed;
+    height: 70px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;  
+}
+.navigation_bar{
+    display: inline-block;
+    width: 1140px;
+    margin-left: calc(50% - 570px);
+    height: 70px;
+}
+    .navigation_bar > .logo{
+        display: inline-block;
+        float: left;
+        text-transform: uppercase;
+        font-size: 28px;
+        margin-top: calc(35px - 14px);
+    }
+    .navigation_bar > nav{
+        display: inline-block;
+        float: right;
+        margin-top: calc(35px - 7px);
+    }
+        .navigation_bar > nav > a{
+            text-transform: uppercase;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 35px;
+            font-weight: 600;
+        }
+            #main_nav > a:hover{
+                color: red;
+            }
+            #main_nav > a.active{
+                background-color: red;
+                color: white;
+            }
+                header.scroll {
+                    background-color: white;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                }
+                    header.scroll .logo {
+                        color: red;
+                    }
+                    header.scroll #main_nav > a {
+                        color: black;
+                    }
+                    header.scroll #main_nav > a:hover {
+                        color: red;
+                    }
+                    header.scroll #main_nav > a.active {
+                        color: white;
+                    }
+.home{
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    text-align: center;
+    letter-spacing: 1px;
+}
+    .home > div{
+        padding-top: calc(50vh - 141px);
+    }
+        .home > div > h1{
+            font-size: 90px;
+            padding: 10px 0;
+        }
+        .home > div > h2{
+            font-size: 55px;
+            font-weight: 500;
+        }
+        .home > div> span{
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        .home > div > .hero_btn{
+            font-size: 16px;
+            background-color:rgb(243, 66, 54);
+            width: 240px;
+            padding: 15px 45px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 35px;
+            margin-left: calc(50% - 120px);
+            margin-top: 30px;
+        }
+.container{
+    width: 100%;
+}
+.container > .about_container{
+    display: inline-block;
+    padding: 100px 0;
+    width: 1140px;
+    margin-left: calc(50% - 570px);
+
+}  
+    .container > .about_container > .about_foto{
+        display: inline-block;
+        float: left;
+        background-image: url(../images/about.jpg);
+        background-size: cover;
+        height: 440px;
+        width: 440px;
+        border: 10px solid white;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2)
+        
+    }
+    .container > .about_container > .about_info{
+        display: inline-block;
+        width: 700px;
+        padding-left: 30px;
+    }
+        .container > .about_container > .about_info > h2{
+            font-size: 35px;
+            text-transform: uppercase;
+            color: rgb(51, 51, 51);
+        }
+            .container > .about_container > .about_info > h2 > span{
+                color: red;
+            }
+        .container > .about_container > .about_info > h3{
+            font-weight: 500;
+            font-size: 28px;
+            color: rgb(51, 51, 51);
+            padding: 10px 0;
+        }
+        .container > .about_container > .about_info > p{
+            color: rgb(51, 51, 51);
+            line-height: 1.4;
+            padding: 10px 0;
+        }
+            .container > .about_container > .about_info > .about_btn > button{
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 10px 40px;
+                border-radius: 35px;
+                background-color: rgb(243, 66, 54);
+                border: none;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2)
+            }
+            .about_info > .socials {
+                display: inline-block;
+                padding: 20px 0 40px 0;
+            }
+                .about_info > .socials > a {
+                    display: inline-block;
+                    float: left;
+                    text-decoration: none;
+                    margin-right: 10px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #121212;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                    .about_info > .socials > a > i {
+                        display: inline-block;
+                        width: 100%;
+                        line-height: 40px;
+                        color: #FFF;
+                        text-align: center;
+                    }
+                    .about_info > .socials > a:hover {
+                        background-color: #f34236;
+                    }
+.container > .services_container{
+    padding: 100px 0;
+    width: 1140px;
+    margin-left: calc(50% - 570px);
+}
+    .container > .services_container > h2{
+        text-transform: uppercase;
+        font-size: 35px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+        padding-bottom: 30px;
+    }
+        .container > .services_container > h2 > span{
+            color: red;
+        }
+        .services {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+            .services > .service {
+                display: inline-block;
+                width: 360px;
+                margin: 10px;
+                padding: 20px;
+                margin-bottom: 30px;
+                background-color: #FFF;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+                border-radius: 8px;
+                font-size: 15px;
+            }
+                .services > .service > span{
+                    display: inline-block;
+                    width: 80px;
+                    background-color: red;
+                    margin: 30px 0 20px 0;
+                    border-radius: 50%;
+                }
+                    .services > .service > span >i{
+                        font-size: 40px;
+                        line-height: 80px;
+                        color: #fff;
+                        
+                    }
+                .services > .service > h3{
+                    color: black;
+                    font-size: 22px;
+                    padding-bottom: 10px;
+                }
+                .services > .service > p{
+                    color: black;
+                    line-height: 25px;
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+.container > .resume_container{
+    padding: 100px 0;
+}
+    .container > .resume_container > h2{
+        text-transform: uppercase;
+        font-size: 35px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+    }
+        .container > .resume_container > h2 > span{
+            color: red;
+        }
+    .resume_info_container{
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: calc(50% - 555px);
+    }
+        .resume_info_container > .resume_box{
+            display: inline-block;
+            width: 515px;
+            background-color: white;
+            padding-bottom: 30px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            margin: 0 20px 0 20px;
+        }
+            .resume_info_container > .resume_box > h3{
+                font-size: 23px;
+                color: red;
+                padding: 20px 0 20px 20px;
+            }
+            .resume_info_container > .resume_box > h5{
+                font-size: 16px;
+                color: black;
+                font-weight: 600;
+                padding: 0 0 10px 20px;
+            }
+            .resume_info_container > .resume_box > span{
+                font-size: 15px;
+                color: black;
+                margin: 0 0 0 20px;
+                font-style: italic;
+            }
+            .resume_info_container > .resume_box > p{
+                font-size: 15px;
+                color: black;
+                margin: 10px 20px 20px 20px;
+                line-height: 25px;
+                font-size: 15px;
+            }
+.container > .freelance_container{
+    padding: 60px 0;
+}
+    .container > .freelance_container > h2{
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .container > .freelance_container > button{
+                font-size: 14px;
+                color: black;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 15px 15px;
+                border-radius: 35px;
+                background-color: white;
+                border: none;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+                margin-left: calc(50% - 63px);
+                margin-top: 30px;
+    }
+.container > .portfolio_container{
+    padding: 100px 0;
+    width: 1140px;
+    margin-left: calc(50% - 570px);
+} 
+    .container > .portfolio_container > h2{
+        text-transform: uppercase;
+        font-size: 35px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+        .container > .portfolio_container > h2 > span{
+            color: red;
+        }
+        .gallery {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+        }
+            .gallery > .filter {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+                .gallery > .filter > .item {
+                    display: inline-block;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    color: black;
+                    text-transform: uppercase;
+                }
+                .gallery > .filter > .item:hover,
+                .gallery > .filter > .item.active {
+                    color: #f34236;
+                }
+            .gallery > .list {
+                display: inline-block;
+                width: calc(100% + 20px);
+                margin-left: -10px;
+            }
+                .gallery > .list > .item {
+                    display: inline-block;
+                    width: calc( (100% - 60px) / 3 );
+                    height: 320px;
+                    float: left;
+                    margin: 0 10px 20px 10px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                    border-radius: 4px;
+                    border: 10px solid #FFF;
+                    position: relative;
+                    background-size: cover;
+                }
+                    .gallery > .list > .item .black {
+                        display: none;
+                    }
+                    .gallery > .list > .item .texts {
+                        display: none;
+                    }
+        
+                    .gallery > .list > .item:hover > .black {
+                        display: block;
+                        background-color: rgba(0,0,0,0.7);
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .gallery > .list > .item:hover > .texts {
+                        display: block;
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                    }
+                        .gallery > .list > .item:hover .title {
+                            color: #FFF;
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                        .gallery > .list > .item:hover .tag {
+                            display: inline-block;
+                            background-color: red;
+                            color: #FFF;
+                            font-size: 16px;
+                            line-height: 20px;
+                            padding: 5px 10px;
+                        }
+.container > .blog_container{
+    padding: 100px 0;
+    width: 1140px;
+    margin-left: calc(50% - 570px);
+}    
+    .container > .blog_container > h2{
+        text-transform: uppercase;
+        font-size: 35px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+        padding-bottom: 30px;
+    }
+        .container > .blog_container > h2 > span{
+            color: red;
+        }
+        .blog-list {
+            display: inline-block;
+            width: 100%;
+        }
+            .blog-list > .blog {
+                display: inline-block;
+                width: 360px;
+                padding: 20px;
+                margin: 10px;
+                background-color: #FFF;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+                border-radius: 8px;
+                font-size: 14px;
+                text-align: left;
+                overflow: hidden;
+            }
+                .blog-list > .blog > img {
+                    display: block;
+                    width: calc(100% + 40px);
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    margin-bottom: 10px;
+                }
+                    .blog-list > .blog > h3{
+                        color: black;
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding-bottom: 10px;
+                    }
+                    .blog-list > .blog > span{
+                        font-size: 13px;
+                        color: black;
+                    }
+                    .blog-list > .blog > p{
+                        font-size: 15px;
+                        color: black;
+                        padding-top: 10px;
+                    }
+                    .blog-list > .blog > .btn_blog{
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        padding: 10px 20px;
+                        border-radius: 35px;
+                        background-color: rgb(243, 66, 54);
+                        border: none;
+                        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+                        margin-top: 20px;
+                    }
+    .container > .blog_container > .btn_view_all{
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 20px 20px;
+        border-radius: 35px;
+        background-color: rgb(243, 66, 54);
+        border: none;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        margin-top: 50px;
+        margin-left: calc(50% - 53px);
+    }   
+.container > .contact_container{
+    display: inline-block;
+    padding: 100px 0;
+    margin-left: calc(50% - 472px);
+}
+    .container > .contact_container > .text_form_container{
+        display: inline-block;
+        margin-top: 50px;
+        width: 945px;
+    }    
+        .container > .contact_container > .text_form_container > .text_form{
+            display: inline-block;
+            float: left;
+            width: 555px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+            .text_form > input{
+                width: 235px;
+                font-size: 14px;
+                margin: 20px 20px;
+                border: none;
+                border-bottom: 2px solid #a2a2a2;
+                background: none;
+                color: black;
+                outline: none;
+                padding-bottom: 10px;
+            }
+                .text_form > textarea{
+                    width: 515px;
+                    margin: 10px 20px;
+                    resize: none;
+                    outline: none;
+                    color: black;
+                    border: 2px solid #a2a2a2;
+                    padding: 10px 10px;
+                    font-size: 14px;
+                }
+                .text_form > button{
+                    width: 150px;
+                    line-height: 50px;
+                    background-color: #f34236;
+                    border: none;
+                    border-radius: 35px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-left: calc(50% - 75px);
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+                }
+            .adress_box{
+                display: inline-block;
+                float: left;
+                margin: 0 0 20px 30px;
+                width: 360px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            }
+                .adress_box > i{
+                    display: inline-block;
+                    float: left;
+                    height: 50px;
+                    width: 50px;
+                    font-size: 16px;
+                    background-color: black;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    margin: 10px 0 15px 20px;
+                }
+                .adress_box > h3{
+                    width: 260px;
+                    float: left;
+                    margin:10px 0 10px 20px;
+                    color: black;
+                }
+                .adress_box > p{
+                    color: black;
+                    margin-left: 90px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    color: #666;
+                }
+            .email_box{
+                display: inline-block;
+                float: left;
+                margin: 0 0 20px 30px;
+                width: 360px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            }
+                .email_box > i{
+                    display: inline-block;
+                    float: left;
+                    height: 50px;
+                    width: 50px;
+                    font-size: 16px;
+                    background-color: black;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    margin: 10px 0 15px 20px;
+                }
+                .email_box > h3{
+                    width: 260px;
+                    float: left;
+                    margin:10px 0 10px 20px;
+                    color: black;
+                }
+                .email_box > p{
+                    color: black;
+                    margin-left: 90px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    color: #666;
+                }
+            .phone_box{
+                display: inline-block;
+                float: left;
+                margin: 0 0 20px 30px;
+                width: 360px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            }
+                .phone_box > i{
+                    display: inline-block;
+                    float: left;
+                    height: 50px;
+                    width: 50px;
+                    font-size: 16px;
+                    background-color: black;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    margin: 10px 0 15px 20px;
+                }
+                .phone_box > h3{
+                    width: 260px;
+                    float: left;
+                    margin:10px 0 10px 20px;
+                    color: black;
+                }
+                .phone_box > p{
+                    color: black;
+                    margin-left: 90px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    color: #666;
+                }
+    .container > .contact_container > h2{
+        text-transform: uppercase;
+        font-size: 35px;
+        color: rgb(51, 51, 51);
+        text-align: center;
+    }
+        .container > .contact_container > h2 > span{
+            color: red;
+        }
+.container > .footer_social_container{
+    padding: 40px 0;
+}    
+    .container > .footer_social_container > h3{
+        text-transform: uppercase;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        font-weight: 300;
+    }
+.container > .rights_container{
+    padding: 25px 0;
+}
+    .container > .rights_container > h5{
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        font-weight: 300;
+}
+.footer_social_container > .socials {
+    display: inline-block;
+    padding: 20px 0 40px 0;
+    margin-left: calc(50% - 125px);
+}
+    .footer_social_container > .socials > a {
+        display: inline-block;
+        text-decoration: none;
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+        background-color: #000000;
+        border-radius: 50%;
+        overflow: hidden;
+        
+    }
+        .footer_social_container > .socials > a > i {
+            display: inline-block;
+            width: 100%;
+            line-height: 40px;
+            color: #FFF;
+            text-align: center;
+        }
+        .footer_social_container > .socials > a:hover {
+            background-color: #f34236;
+        }
+.bg_gray{
+    background-color: rgb(243, 243, 243);
+}
+.bg_red{
+    background-color:rgb(243, 66, 54);
+}
+.bg_darker_gray{
+    background-color:rgb(23, 23, 23);
+}
+.bg_dark_gray{
+    background-color:rgb(18, 18, 18);
+}
+.bg_white{
+    background-color:white;
+}
